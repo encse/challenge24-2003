@@ -5,7 +5,7 @@ This project contains the solutions to the first electronic round of Challenge24
 ## Installing / Getting started
 
 To get the code running you can open the solution in Visual Studio (2015) or Visual Studio for Mac. Alternatively you can build it 
-from the command line, supposed that you have mono installed you can simply compile and run the project with
+from the command line. Supposed that you have mono installed you can simply compile and run the project with
 
 ``` 
 > xbuild
