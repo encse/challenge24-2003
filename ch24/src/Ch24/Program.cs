@@ -41,7 +41,7 @@ namespace Ch24
 				.SelectProblems()
 				.Run(fParallel: false);
 
-			
+			Console.WriteLine("Press Enter to exit");
 			Console.ReadLine();
 		}
 
