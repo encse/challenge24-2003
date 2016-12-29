@@ -28,7 +28,7 @@ namespace Contest
 				.SelectProblems()
 				.Run(fParallel: false);
 
-			new Ch24Runner<DIslandSolver>("D-{0}.in", "D{0}.png", "D-{0}.refout")
+			new Ch24Runner<DislandSolver>("D-{0}.in", "D{0}.png", "D-{0}.refout")
 				.SelectProblems()
 				.Run(fParallel: false);
 

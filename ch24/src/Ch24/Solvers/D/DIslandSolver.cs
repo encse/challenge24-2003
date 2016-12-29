@@ -8,7 +8,7 @@ using QuickGraph;
 
 namespace Solvers.Contest03.D
 {
-    class DIslandSolver : Solver
+    class DislandSolver : Solver
     {
         public override void Solve()
         {
