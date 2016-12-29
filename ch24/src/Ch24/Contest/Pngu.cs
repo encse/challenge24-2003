@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using Hjg.Pngcs;
 using Hjg.Pngcs.Chunks;
-using Cmn.Util;
+using Contest.Util;
 
-namespace Ch24.Contest
+namespace Contest
 {
     public class Pxl
     {

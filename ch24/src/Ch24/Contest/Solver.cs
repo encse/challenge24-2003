@@ -5,10 +5,10 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Cmn.Util;
+using Contest.Util;
 using log4net;
 
-namespace Ch24.Contest
+namespace Contest
 {
     public abstract class Solver
     {

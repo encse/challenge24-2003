@@ -117,43 +117,61 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ch24Runner.cs" />
-    <Compile Include="Contest03\A\ALettersSolver.cs" />
-    <Compile Include="Contest03\B\BExpressionsSolver.cs" />
-    <Compile Include="Contest03\C\CDNA2Solver.cs" />
-    <Compile Include="Contest03\C\CDNA4Solver.cs" />
-    <Compile Include="Contest03\F\FEcologySolver.cs" />
-    <Compile Include="Contest03\E\ECryptoSolver.cs" />
-    <Compile Include="Contest03\D\DIslandSolver.cs" />
+    <Compile Include="Solvers\A\ALettersSolver.cs" />
+    <Compile Include="Solvers\B\BExpressionsSolver.cs" />
+    <Compile Include="Solvers\C\CDNA2Solver.cs" />
+    <Compile Include="Solvers\C\CDNA4Solver.cs" />
+    <Compile Include="Solvers\F\FEcologySolver.cs" />
+    <Compile Include="Solvers\E\ECryptoSolver.cs" />
+    <Compile Include="Solvers\D\DIslandSolver.cs" />
     <Compile Include="Contest\Pngu.cs" />
     <Compile Include="Contest\Solver.cs" />
-    <Compile Include="LgLog4net.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util\CWDFileAppender.cs" />
-    <Compile Include="Util\U.cs" />
-    <Compile Include="Util\Wavu.cs" />
+    <Compile Include="Contest\Gvis\Laydg.cs" />
+    <Compile Include="Contest\Gvis\Layn.cs" />
+    <Compile Include="Contest\Gvis\Layout.cs" />
+    <Compile Include="Contest\Gvis\Layv.cs" />
+    <Compile Include="Contest\Util\Astar.cs" />
+    <Compile Include="Contest\Util\Astar2.cs" />
+    <Compile Include="Contest\Util\BitmapWrapper.cs" />
+    <Compile Include="Contest\Util\Bsrc.cs" />
+    <Compile Include="Contest\Util\Clam.cs" />
+    <Compile Include="Contest\Util\CWDFileAppender.cs" />
+    <Compile Include="Contest\Util\FordFulkerson.cs" />
+    <Compile Include="Contest\Util\ILg.cs" />
+    <Compile Include="Contest\Util\IntRangeParser.cs" />
+    <Compile Include="Contest\Util\MinHeap.cs" />
+    <Compile Include="Contest\Util\MinMaxKer.cs" />
+    <Compile Include="Contest\Util\PermuteExtensions.cs" />
+    <Compile Include="Contest\Util\Pparser.cs" />
+    <Compile Include="Contest\Util\RankedSet.cs" />
+    <Compile Include="Contest\Util\Seq.cs" />
+    <Compile Include="Contest\Util\Solwrt.cs" />
+    <Compile Include="Contest\Util\SuffTree.cs" />
+    <Compile Include="Contest\Util\U.cs" />
+    <Compile Include="Contest\Util\Vector.cs" />
+    <Compile Include="Contest\Util\WavInFile.cs" />
+    <Compile Include="Contest\Util\Wavu.cs" />
+    <Compile Include="Contest\Util\Wrp.cs" />
+    <Compile Include="Contest\Ch24Runner.cs" />
+    <Compile Include="Contest\LgLog4net.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="App_Readme\MathNet.Numerics.readme.txt" />
-    <None Include="App_Readme\MathNet.Numerics.copyright.txt" />
-    <None Include="App_Readme\MathNet.Numerics.authors.txt" />
-    <None Include="Contest03\C\CDNASolver.cs" />
-    <None Include="Contest03\C\CDNA3Solver.cs" />
+    <None Include="Solvers\C\CDNASolver.cs" />
+    <None Include="Solvers\C\CDNA3Solver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\common\Cmn.csproj">
-      <Project>{839bb210-4df4-4575-a3be-5cc38447b568}</Project>
-      <Name>Cmn</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Contest\Gvis\" />
+    <Folder Include="Contest\Util\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
