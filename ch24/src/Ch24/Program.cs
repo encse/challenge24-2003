@@ -1,84 +1,49 @@
 ﻿using System;
-using System.Linq;
-using Ch24.Contest14.A;
-using Ch24.Contest16.A;
+using Ch24.Contest03.A;
+using Ch24.Contest03.B;
+using Ch24.Contest03.C;
+using Ch24.Contest03.D;
+using Ch24.Contest03.E;
+using Ch24.Contest03.F;
 using Cmn.Util;
 
 namespace Ch24
 {
-    class Program
-    {
-        [STAThreadAttribute]
-        static void Main()
-        {
-            Lg.dgIlgFromTy = ty => new LgLog4net(ty);
+	class Program
+	{
+		[STAThreadAttribute]
+		static void Main()
+		{
+			Lg.dgIlgFromTy = ty => new LgLog4net(ty);
 
-            new Ch24Runner<ASafeSolver>("{0}.in", "a{0}.out", "a{0}.refout")
-                .SelectProblems()
-                .Run(fParallel: false);
-           
-            Console.ReadLine();
-        }
+			//new Ch24Runner<ALettersSolver>("A-{0}.in", "A{0}.out", "A-{0}.refout")
+			//	.SelectProblems()
+			//	.Run(fParallel: false);
 
-//        private static double F(double x, double y)
-//        {
-//            return 3*x*y - 2*x + 1+y+6*y*y;
-//        }
-
-//        public static void f(double[] c, double[] x, ref double y, object obj)
-//        {
-//            y = c[0]*x[0]*x[0] + c[1]*x[0] + c[2]*x[1]+c[3]*x[1]*x[1]+c[4]*x[0]*x[1]+c[5];
-//        }
-
-//        private static void Foo()
-//        {
-//            const double diffstep = 0.0001;
-//            const int epsf = 0;
-//            const int epsx = 0;
-//            const int maxits = 1000000;
+			//new Ch24Runner<BExpressionsSolver>("B-{0}.in", "B{0}.out", "B-{0}.refout")
+			//	.SelectProblems()
+			//	.Run(fParallel: false);
 
 
-//            // úgy hogy minimalizáljuk a 
+			//new Ch24Runner<CDNA4Solver>("C-{0}.in", "C{0}.out", "C-{0}.refout")
+			//	.SelectProblems()
+			//	.Run(fParallel: false);
 
-//            //kezdeti közelítés (a korlátokon belül)
-//            double[] cInit = new double[]{0,0,0,0,0,0};
+			//new Ch24Runner<DIslandSolver>("D-{0}.in", "D{0}.png", "D-{0}.refout")
+			//	.SelectProblems()
+			//	.Run(fParallel: false);
 
-//            //alsó és felső korlátok a paraméterekre:
-//            var cLower = new double[]{-100,-100,-100, -100,-100, -100};
-//            var cUpper = new double[] { 100, 100, 100,100,100,100 };
+			//new Ch24Runner<ECryptoSolver>("E-{0}.in", "E{0}.out", "E-{0}.refout")
+			//	.SelectProblems()
+			//	.Run(fParallel: false);
 
-//            //észlelések időpontja
-//            var rgX = new double[8,2]{ {-10, -10},{2,3},{0,1},{10,-5},{4,7},{3,2},{2,9},{9,1}};
-//            //észlelt frekvenciák:
-//            var rgY = new double[rgX.GetLength(0)];
-//            for(var i = 0;i<rgX.GetLength(0);i++)
-//            {
-//                rgY[i] = F(rgX[i,0],rgX[i,1]);
-//            }
- 
-//            alglib.lsfitstate state;
+			new Ch24Runner<FEcologySolver>("F-{0}.in", "F{0}.out", "F-{0}.refout")
+				.SelectProblems()
+				.Run(fParallel: false);
 
-//            //csak az f(x|c)-t kell számolnunk
-//            alglib.lsfitcreatef(rgX, rgY, cInit, diffstep, out state);
+			
+			Console.ReadLine();
+		}
 
-//            //constraintek
-//            alglib.lsfitsetbc(state, cLower, cUpper);
-
-//            //leállási feltétel
-//            alglib.lsfitsetcond(state, epsf, epsx, maxits);
-
-//            //számoljá
-//            alglib.lsfitfit(state, f, null, null);
-
-//            int info;
-//            double[] cSolution;
-//            alglib.lsfitreport rep;
-//            alglib.lsfitresults(state, out info, out cSolution, out rep);
-
-////            if (info != 2 )
-////                throw new Exception("coki");
-
-//            Console.WriteLine("{0}x^2+{1}x+{2}y+{3}y^2+{4}xy+{5}", cSolution[0], cSolution[1], cSolution[2], cSolution[3], cSolution[4], cSolution[5]);
-//        }
-    }
+	}
 }

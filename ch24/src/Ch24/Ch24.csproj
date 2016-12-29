@@ -72,22 +72,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\coyotek\Cyotek.Windows.Forms.ImageBox.dll</HintPath>
     </Reference>
-    <Reference Include="Google.OrTools, Version=2.0.3322.3902, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\..\packages\Google.OrTools.2.0.3322\lib\net40\Google.OrTools.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\..\packages\pngcs_1_1_4\dotnet20\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="MathNet.Numerics, Version=2.3.0.25, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MathNet.Numerics.2.3.0\lib\net40\MathNet.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="MathNet.Numerics.IO, Version=2.3.0.25, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MathNet.Numerics.2.3.0\lib\net40\MathNet.Numerics.IO.dll</HintPath>
     </Reference>
     <Reference Include="Pngcs">
       <HintPath>..\..\packages\pngcs_1_1_4\dotnet20\Pngcs.dll</HintPath>
@@ -120,115 +106,27 @@
     <Reference Include="zlib.net, Version=1.0.3.0, Culture=neutral, PublicKeyToken=47d7877cb3620160">
       <HintPath>..\..\packages\zlib.net.1.0.4.0\lib\zlib.net.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\..\packages\MathNet.Numerics.2.3.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics.IO">
+      <HintPath>..\..\packages\MathNet.Numerics.2.3.0\lib\net40\MathNet.Numerics.IO.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ch24Runner.cs" />
     <Compile Include="Contest03\A\ALettersSolver.cs" />
     <Compile Include="Contest03\B\BExpressionsSolver.cs" />
-    <Compile Include="Contest03\C\CDNASolver.cs" />
     <Compile Include="Contest03\C\CDNA2Solver.cs" />
-    <Compile Include="Contest03\C\CDNA3Solver.cs" />
     <Compile Include="Contest03\C\CDNA4Solver.cs" />
     <Compile Include="Contest03\F\FEcologySolver.cs" />
     <Compile Include="Contest03\E\ECryptoSolver.cs" />
     <Compile Include="Contest03\D\DIslandSolver.cs" />
-    <Compile Include="Contest04\A\AErrorCorrectionSolver.cs" />
-    <Compile Include="Contest04\A\AErrorCorrection2Solver.cs" />
-    <Compile Include="Contest04\B\BKnightsSolver.cs" />
-    <Compile Include="Contest04\B\BKnightsSolver2.cs" />
-    <Compile Include="Contest04\C\CTvProgrammingSolver2.cs" />
-    <Compile Include="Contest04\C\CTvProgrammingSolver.cs" />
-    <Compile Include="Contest04\D\DWizardsSolver.cs" />
-    <Compile Include="Contest04\E\ENumbers2Solver.cs" />
-    <Compile Include="Contest04\E\ENumbersSolver.cs" />
-    <Compile Include="Contest04\F\FMovieSolver.cs" />
-    <Compile Include="Contest05\A\AArchipelagoSolver.cs" />
-    <Compile Include="Contest05\B\BarbarianInvasionSolver.cs" />
-    <Compile Include="Contest05\B\ConvexHull.cs" />
-    <Compile Include="Contest05\C\CleaningSolver.cs" />
-    <Compile Include="Contest05\D\DestructionDroidSolver.cs" />
-    <Compile Include="Contest05\E\EasyCompressionSolver.cs" />
-    <Compile Include="Contest05\F\Features3Solver.cs" />
-    <Compile Include="Contest05\F\FeaturesSolver.cs" />
-    <Compile Include="Contest09\A\AOilLakesSolver.cs" />
-    <Compile Include="Contest09\A\AOilLakes2Solver.cs" />
-    <Compile Include="Contest10\R\ColumnsSolver.cs" />
-    <Compile Include="Contest10\F\FDataRecovery2Solver.cs" />
-    <Compile Include="Contest10\F\FDataRecoverySolver.cs" />
-    <Compile Include="Contest10\P\NormalizeSolver.cs" />
-    <Compile Include="Contest10\Q\QAbsurdistanSolver.cs" />
-    <Compile Include="Contest11\E\EquilateralSolver.cs" />
-    <Compile Include="Contest11\E\Equilateral2Solver.cs" />
-    <Compile Include="Contest11\C\CGramophone2Solver.cs" />
-    <Compile Include="Contest11\C\CGramophoneSolver.cs" />
-    <Compile Include="Contest11\R\RWavsolver.cs" />
-    <Compile Include="Contest11\B\SpanningTreeSolver.cs" />
-    <Compile Include="Contest12\B\LumberjackSolver.cs" />
-    <Compile Include="Contest12\E\EBeacon2Solver.cs" />
-    <Compile Include="Contest12\E\EBeaconSolver.cs" />
-    <Compile Include="Contest12\Q\QSoundplot2Solver.cs" />
-    <Compile Include="Contest13\A\CeoSolver.cs" />
-    <Compile Include="Contest13\F\BackupSolver.cs" />
-    <Compile Include="Contest13\A\Ceo2Solver.cs" />
-    <Compile Include="Contest13\A\Ceo3Solver.cs" />
-    <Compile Include="Contest13\E\CompressSolver.cs" />
-    <Compile Include="Contest13\E\Compress2Solver.cs" />
-    <Compile Include="Contest13\E\Compress3Solver.cs" />
-    <Compile Include="Contest13\D\OctalCnc3Solver.cs" />
-    <Compile Include="Contest13\D\OctalCnc2Solver.cs" />
-    <Compile Include="Contest13\D\OctalCncSolver.cs" />
-    <Compile Include="Contest13\Q\Cutter2.cs" />
-    <Compile Include="Contest13\Q\Cutter3.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Contest13\B\RequirementsSolver.cs" />
-    <Compile Include="Contest13\C\Roadroller2Solver.cs" />
-    <Compile Include="Contest13\C\RoadrollerSolver.cs" />
-    <Compile Include="Contest13\G\TrainSolver.cs" />
-    <Compile Include="Contest13\P\PWhistles2Solver.cs" />
-    <Compile Include="Contest13\P\PWhistlesSolver.cs" />
-    <Compile Include="Contest12\F\CurrenciesSolver.cs" />
-    <Compile Include="Contest12\P\Independent2Solver.cs" />
-    <Compile Include="Contest12\C\LumberjackSolver.cs" />
-    <Compile Include="Contest12\Q\QSoundplotSolver.cs" />
-    <Compile Include="Contest12\A\TrianglesSolver.cs" />
-    <Compile Include="Contest13\R\HistorySolver.cs" />
-    <Compile Include="Contest13\Q\Cutter.cs" />
-    <Compile Include="Contest13\Q\Plotter.cs" />
-    <Compile Include="Contest13\Q\PlotSolver.cs" />
-    <Compile Include="Contest14\A\ASafeSolver.cs" />
-    <Compile Include="Contest15\C\CBoredomSolver.cs" />
-    <Compile Include="Contest15\D\DSolver.cs" />
-    <Compile Include="Contest15\E\ESolver.cs" />
-    <Compile Include="Contest15\F\FSolver.cs" />
-    <Compile Include="Contest15\C\CBoredomSolver2.cs" />
-    <Compile Include="Contest15\B\BSolver.cs" />
-    <Compile Include="Contest15\A\ATropesSolver.cs" />
-    <Compile Include="Contest15\Q\QLinesSolver.cs" />
-    <Compile Include="Contest14\I\ICrowdControlNotSolver.cs" />
-    <Compile Include="Contest14\H\HTileDesignSolver.cs" />
-    <Compile Include="Contest14\D\DVisualProgrammingSolver.cs" />
-    <Compile Include="Contest14\C\CVisualProgrammingVMSolver.cs" />
-    <Compile Include="Contest14\B\BWiretrappingSolver.cs" />
-    <Compile Include="Contest14\B\BWiretrappingSolver2.cs" />
-    <Compile Include="Contest14\E\ETravelling.cs" />
-    <Compile Include="Contest14\F\FForensics.cs" />
-    <Compile Include="Contest14\G\GSpyUnion.cs" />
-    <Compile Include="Contest14\J\JImageCompressionSolver.cs" />
-    <Compile Include="Contest14\P\PFilmLogisticsSolver.cs" />
-    <Compile Include="Contest14\Q\QPopcornSolver.cs" />
-    <Compile Include="Contest14\R\RSeatingOrderSolver.cs" />
-    <Compile Include="Contest15\P\PCodeCounterSolver.cs" />
-    <Compile Include="Contest15\Q\QLinesSolver2.cs" />
-    <Compile Include="Contest16\A\ASolver.cs" />
-    <Compile Include="Contest16\B\Bolver.cs" />
-    <Compile Include="Contest16\C\CSolver.cs" />
-    <Compile Include="Contest16\D\DSolver.cs" />
-    <Compile Include="Contest16\E\ESolver.cs" />
-    <Compile Include="Contest16\F\FSolver.cs" />
     <Compile Include="Contest\Pngu.cs" />
     <Compile Include="Contest\Solver.cs" />
-    <Compile Include="Contest12\P\IndependentSolver.cs" />
     <Compile Include="LgLog4net.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -240,6 +138,11 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="App_Readme\MathNet.Numerics.readme.txt" />
+    <None Include="App_Readme\MathNet.Numerics.copyright.txt" />
+    <None Include="App_Readme\MathNet.Numerics.authors.txt" />
+    <None Include="Contest03\C\CDNASolver.cs" />
+    <None Include="Contest03\C\CDNA3Solver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

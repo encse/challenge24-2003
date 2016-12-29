@@ -17,8 +17,8 @@ namespace Ch24
         public Ch24Runner(string fmtfilnIn, string fmtfilnOut, string ofmtfilnRefout)
         {
             rgsolver = CreateSolvers(fmtfilnIn, fmtfilnOut, ofmtfilnRefout);
-
             Console.Title = string.Format("Running {0}", typeof(TSolver).Name);
+			Console.WriteLine(Console.Title);
         }
 
         List<TSolver> CreateSolvers(string fmtfilnIn, string fmtfilnOut, string ofmtfilnRefout)
@@ -26,7 +26,7 @@ namespace Ch24
             var nsParts = typeof(TSolver).Namespace.Split('.');
             var contestId = "20" + nsParts[1].Substring(nsParts[1].Length - 2);
             var problemName = nsParts[2];
-            var dpat = "data/{0}/{1}".StFormat(contestId, problemName);
+            var dpat = "./data/{0}/{1}".StFormat(contestId, problemName);
 
             var rgsolver = new List<TSolver>();
             foreach (var filn in Directory.EnumerateFiles(dpat, fmtfilnIn.Replace("{0}", "*")))
@@ -114,7 +114,7 @@ namespace Ch24
             Console.Write("Problems to solve [" + stAvailable + "] ");
 
             var stInput = Console.ReadLine();
-            if (stInput == "")
+			if (string.IsNullOrWhiteSpace(stInput))
                 return this;
 
             var problems = IntRangeParser.Parse(stInput, rgsolver.Min(solver => solver.IdProblem), rgsolver.Max(solver => solver.IdProblem)).ToArray();
