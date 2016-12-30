@@ -43,12 +43,12 @@ correct solution. When your solution is judged, such errors will be tolerated.
 ## Sample Input
 `sample-D-1.in`:
 ```6
-100
-200
-200
-400
-370
-480
+100 200
+200 50
+200 340
+400 70
+370 400
+480 120
 8
 0 1
 1 2
@@ -58,13 +58,6 @@ correct solution. When your solution is judged, such errors will be tolerated.
 3 4
 3 5
 4 5
-
-200
-50
-340
-70
-400
-120
 ```
 ## Sample Output
 `sample-D-1.png`:
