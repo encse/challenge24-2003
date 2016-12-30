@@ -56,6 +56,9 @@ Definition of letters (sample-A-1.in):
     .**..**.
     ..****..
 
+Input image (`sample-A-1.png`):
+![sample-A-1.png](sample-A-1.png?raw=true)
+
 ## Sample Output ##
 Number of characters (sample-A-1.out):
 
