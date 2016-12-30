@@ -42,7 +42,8 @@ correct solution. When your solution is judged, such errors will be tolerated.
 
 ## Sample Input
 `sample-D-1.in`:
-```6
+```
+6
 100 200
 200 50
 200 340
@@ -61,4 +62,4 @@ correct solution. When your solution is judged, such errors will be tolerated.
 ```
 ## Sample Output
 `sample-D-1.png`:
-![sample-D-1.png](sample-D-1.refout.png?raw=true "")
+![sample-D-1.png](sample-D-1.refout.png?raw=true =250x)
