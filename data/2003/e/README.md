@@ -9,7 +9,7 @@ secret message.
 
 The encryption process consists of the following steps.
 
-**Step 1.** We assume that the length `l` of the original text is a perfect square, that is, *l = n × n* for some
+**Step 1.** We assume that the length *l* of the original text is a perfect square, that is, *l = n × n* for some
 integer *n*. Write the message into an *n* times *n* matrix: fill the first row, starting from the left going to
 the right, then fill the second row, and so on. Read the characters “diagonally”, in the order shown on
 the figure: first read the upper left character, then read the characters under the diagonal arrows shown
