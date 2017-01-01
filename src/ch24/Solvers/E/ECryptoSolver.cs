@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Contest;
+using Wecomp;
 
 namespace Solvers.Contest03.E
 {

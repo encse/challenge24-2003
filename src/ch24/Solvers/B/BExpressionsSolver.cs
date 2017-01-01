@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Contest.Util;
-using Contest;
+using Wecomp.Util;
+using Wecomp;
 
 namespace Solvers.Contest03.B
 {

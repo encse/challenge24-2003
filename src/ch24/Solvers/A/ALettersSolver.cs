@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
-using Contest.Util;
+using Wecomp.Util;
 using Image = System.Drawing.Image;
-using Contest;
+using Wecomp;
 
 namespace Solvers.Contest03.A
 {

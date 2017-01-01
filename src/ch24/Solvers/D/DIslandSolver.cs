@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using Contest.Util;
-using Contest;
+using Wecomp.Util;
+using Wecomp;
 using QuickGraph;
 
 namespace Solvers.Contest03.D

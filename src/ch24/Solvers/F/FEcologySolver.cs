@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Drawing;
-using Contest.Util;
-using Contest;
+using Wecomp.Util;
+using Wecomp;
 namespace Solvers.Contest03.F
 {
 	public class FEcologySolver : Solver

@@ -5,9 +5,9 @@ using Solvers.Contest03.C;
 using Solvers.Contest03.D;
 using Solvers.Contest03.E;
 using Solvers.Contest03.F;
-using Contest.Util;
+using Wecomp.Util;
 
-namespace Contest
+namespace Wecomp
 {
 	class Program
 	{
