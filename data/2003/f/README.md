@@ -7,7 +7,7 @@ keep track of the rabbits and the foxes. Unfortunately, the number of rabbits an
 since the foxes eat the rabbits, and the rabbits breed like, well, like rabbits. You have to write a program
 that simulates the ecosystem of the plains.
 
-The Great Plain of Yukuruku is modeled by a n × m matrix, where each cell is in one of three states:
+The Great Plain of Yukuruku is modeled by a *n × m* matrix, where each cell is in one of three states:
 either there is grass, or there is a rabbit, or there is a fox. In the input you are given the initial state of
 each cell. The cells change according to the following three rules:
 
@@ -25,7 +25,7 @@ have at most 8 neighbors (if the cell is on the boundary of the matrix, then it 
 Given the initial state of the matrix, the simulation goes as follows. First we assign the value *f(i, j)*
 to the cell in the ith row and jth column, where *(1 ≤ i ≤ n, 1 ≤ j ≤ m)*
 
-*f (i, j) = 23i + 87j + 19i2 + 61j 2 + 13i3 + 31j 3 mod 131*,
+*f(i, j) = 23i + 87j + 19i<sup>2</sup> + 61j<sup>2</sup> + 13i<sup>3</sup> + 31j<sup>3</sup> mod 131*,
 
 which is a number between 0 and 130 (*mod 131* means the remainder of the number modulo 131). In the
 first step we apply the three rules to those cells whose *f(i, j)* value is 0, in the second step we apply the
@@ -40,14 +40,14 @@ by a rabbit, and the fox dies of hunger.
 
 ## Input
 The input is a text file describing the initial state of the cells. The first line contains three integers
-(separated by one space): the number of rows n, the number of columns m, and the length of the
-simulation `. The next n lines contain m character each, describing the n rows of the initial matrix. The
+(separated by one space): the number of rows *n*, the number of columns *m*, and the length of the
+simulation *l*. The next *n* lines contain m character each, describing the *n* rows of the initial matrix. The
 characters in the row can be only ’.’ (grass), ’!’ (rabbit), or ’*’ (fox).
 
 ## Output
-For each test case, you have to output a text file, and 6 images in PNG format. The first ` lines of the
-text file show how the number of grass, rabbits, and foxes change during the simulation. The ith line
-(1 ≤ i ≤ n) contains three numbers separated by one space: the number of cells with grass, with rabbit,
+For each test case, you have to output a text file, and 6 images in PNG format. The first *l* lines of the
+text file show how the number of grass, rabbits, and foxes change during the simulation. The *ith* line
+*(1 ≤ i ≤ n)* contains three numbers separated by one space: the number of cells with grass, with rabbit,
 and with fox after the ith step of the simulation. The last 6 lines of the text file gives some statistics. For
 each type of cells, it shows at which step the matrix contained the maximum and minimum number of
 cells from this type. These lines must be in the following format:
@@ -64,8 +64,7 @@ when this type reaches its maximum/minimum. Moreover, it is possible that, for e
 number of grass is reached before the first step of the simulation (the number of grass cells never go below
 the number of grass cells in the initial matrix). In this case, t1 is zero.
 
-The six images that you have to output describe the state of the matrix after the t1 th, t2 th, . . . , t6 th
-step. For test case F-1.in, the output PNG files should be called F-1-1.png, F-1-2.png, . . . , F-1-6.png.
+The six images that you have to output describe the state of the matrix after the t<sub>1</sub>th, t<sub>2</sub>th, . . . , t<sub>6</sub>th step. For test case F-1.in, the output PNG files should be called F-1-1.png, F-1-2.png, . . . , F-1-6.png.
 The width of each image is m pixels, the height is n pixels (it has the same size as the matrix). The pixel
 in the upper left corner corresponds to first cell of the first row. The color of the pixel is determined by
 the state of the cell:
