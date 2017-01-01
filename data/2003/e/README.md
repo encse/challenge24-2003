@@ -9,8 +9,8 @@ secret message.
 
 The encryption process consists of the following steps.
 
-**Step 1.** We assume that the length `l` of the original text is a perfect square, that is, `l = n × n `for some
-integer `n`. Write the message into an `n` times `n` matrix: fill the first row, starting from the left going to
+**Step 1.** We assume that the length `l` of the original text is a perfect square, that is, *l = n × n* for some
+integer *n*. Write the message into an *n* times *n* matrix: fill the first row, starting from the left going to
 the right, then fill the second row, and so on. Read the characters “diagonally”, in the order shown on
 the figure: first read the upper left character, then read the characters under the diagonal arrows shown
 in the figure.
@@ -18,33 +18,33 @@ in the figure.
 <img src="diagonal.png?type=raw" width="20%"/>
 
 **Step 2.** In this step we reorder the character sequence obtained in Step 1. We repeat the following three
-steps `l` times:
+steps *l* times:
 * (a) Write down the first character of the sequence, and delete this character from the sequence.
 * (b) If the length of the remaining sequence is longer than 12 characters, then remove the first 12 characters of the sequence, and append it to the end of the sequence.
 * (c) If the length of the sequence is longer than 1, then swap the first two characters.
 
-**Step 3.** The character sequence created in Step 2 can be interpreted as a sequence of integers a<sub>1</sub>, a<sub>2</sub>,
-. . . , a<sub>l</sub> , where each a<sub>i</sub> is between 0 and 255. In this step we calculate a sequence b<sub>1</sub>, b<sub>2</sub>, . . . , b<sub>l</sub> using the
+**Step 3.** The character sequence created in Step 2 can be interpreted as a sequence of integers *a<sub>1</sub>, a<sub>2</sub>,
+. . . , a<sub>l</sub>,* where each *a<sub>i</sub>* is between 0 and 255. In this step we calculate a sequence *b<sub>1</sub>, b<sub>2</sub>, . . . , b<sub>l</sub>* using the
 following formula:
 
-  b<sub>1</sub> = a<sub>1</sub> 
+  *b<sub>1</sub> = a<sub>1</sub>* 
  
-  b<sub>i</sub> = (a<sub>i</sub> + b<sub>i-1</sub> ) mod 256 for i > 1
+  *b<sub>i</sub> = (a<sub>i</sub> + b<sub>i-1</sub> ) mod 256 for i > 1*
 
-’mod 256’ means taking the remainder of the number modulo 256.
+*mod 256* means taking the remainder of the number modulo 256.
 
-**Step 4.** We calculate a sequence c<sub>1</sub>, c<sub>2</sub>, . . . , c<sub>i</sub>:
+**Step 4.** We calculate a sequence *c<sub>1</sub>, c<sub>2</sub>, . . . , c<sub>i</sub>:*
 
-c<sub>i</sub> = (b<sub>i</sub> + 1) mod 256 if i is a prime number and b<sub>i</sub> otherwise.
+*c<sub>i</sub> = (b<sub>i</sub> + 1) mod 256 if i is a prime number and b<sub>i</sub> otherwise.*
 
-Recall that a number p > 1 is a prime number if and only if its only divisors are p and 1. Note that 1 is
+Recall that a number *p > 1* is a prime number if and only if its only divisors are *p* and 1. Note that 1 is
 not a prime number.
 
-**Step 5.** Each number ci is transformed into two characters. The first character is determined by the
+**Step 5.** Each number *c<sub>i</sub>* is transformed into two characters. The first character is determined by the
 upper 4 bits (MSB) of the number, the second character is determined by the lower 4 bits (LSB). The
 upper 4 bits represent a number between 0 and 15. If this number is 0, then first character is ’A’; if this
 number is 1, then the character is ’B’; . . . ; if this number is 15, then the character is ’P’. The second
-character is determined in a similar fashion, based on the value represented by the lower 4 bits of c<sub>i</sub>.
+character is determined in a similar fashion, based on the value represented by the lower 4 bits of *c<sub>i</sub>*.
 
 ## Example
 For example, consider the message ’CHALLENGE24-2003’. In Step 1 we get the matrix
@@ -77,16 +77,16 @@ steps (a)-(c), we get the following sequences:
 For example, starting with ’CLHEEA22NL04G0-3’, the first character ’C’ is deleted, then the first 12 characters ’LHEEA22NL04G’ are removed from the beginning, and appended to the end, gives ’0-3LHEEA22NL04G’.
 Finally, in step (c), the first two characters are swapped, which is how we get the sequence ’-03LHEEA22NL04G’.
 Since in step (a) we write down the first character of the current sequence, getting ’C-G403LHEEA22NL0’.
-This is equivalent to a sequence of numbers a<sub>1</sub>, a<sub>2</sub>, . . . , a<sub>16</sub> :
+This is equivalent to a sequence of numbers *a<sub>1</sub>, a<sub>2</sub>, . . . , a<sub>16</sub>:*
 
     67, 45, 71, 52, 48, 51, 76, 72, 69, 69, 65, 50, 50, 78, 76, 48.
 
-Therefore the sequence b1 , b2 , . . . , b16 constructed in Step 3 is:
+Therefore the sequence *b<sub>1</sub>, b<sub>2</sub>, . . . , b<sub>16</sub>* constructed in Step 3 is:
 
     67, 112, 183, 235, 27, 78, 154, 226, 39, 108, 173, 223, 17, 95, 171, 219.
 
 In Step 4 we modify the value only of the 2th, 3rd, 5th, 7th, 11th, 13th numbers (these are the prime
-numbers between 1 and 16). Therefore the sequence c1 , c2 , . . . , c16 is
+numbers between 1 and 16). Therefore the sequence *c<sub>1</sub>, c<sub>2</sub>, . . . , c<sub>16</sub>* is
 
     67, 114, 186, 235, 32, 78, 161, 226, 39, 108, 184, 223, 30, 95, 171, 219,
 
@@ -102,12 +102,12 @@ transforms 0x43 to ’ED’. Similarly transforming the other numbers gives the 
 which will be the encoded form of the original message ’CHALLENGE24-2003’.
 
 ## Sample Input
-sample-E-1.in:
+`sample-E-1.in`:
 ```
 EDHCLKOLCAEOKBOCCHGMLINPBOFPKLNL
 ```
 ## Sample Output
-sample-E-1.out:
+`sample-E-1.out`:
 ```
 CHALLENGE24-2003
 ```
