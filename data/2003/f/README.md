@@ -52,20 +52,20 @@ and with fox after the ith step of the simulation. The last 6 lines of the text 
 each type of cells, it shows at which step the matrix contained the maximum and minimum number of
 cells from this type. These lines must be in the following format:
 
-    Minimum number of grass: x1 after step t1 .
-    Maximum number of grass: x2 after step t2 .
-    Minimum number of rabbits: x3 after step t3 .
-    Maximum number of rabbits: x4 after step t4 .
-    Minimum number of foxes: x5 after step t5 .
-    Maximum number of foxes: x6 after step t6 .
+    Minimum number of grass: x1 after step t1.
+    Maximum number of grass: x2 after step t2.
+    Minimum number of rabbits: x3 after step t3.
+    Maximum number of rabbits: x4 after step t4.
+    Minimum number of foxes: x5 after step t5.
+    Maximum number of foxes: x6 after step t6.
 
 If the maximum/minimum of a type is attained multiple times, then you should output the first step
 when this type reaches its maximum/minimum. Moreover, it is possible that, for example, the minimum
 number of grass is reached before the first step of the simulation (the number of grass cells never go below
 the number of grass cells in the initial matrix). In this case, t1 is zero.
 
-The six images that you have to output describe the state of the matrix after the t<sub>1</sub>th, t<sub>2</sub>th, . . . , t<sub>6</sub>th step. For test case F-1.in, the output PNG files should be called F-1-1.png, F-1-2.png, . . . , F-1-6.png.
-The width of each image is m pixels, the height is n pixels (it has the same size as the matrix). The pixel
+The six images that you have to output describe the state of the matrix after the *t<sub>1</sub>*th, *t<sub>2</sub>*th, . . . , *t<sub>6</sub>*th step. For test case `F-1.in`, the output PNG files should be called `F-1-1.png`, `F-1-2.png`, . . . , `F-1-6.png`.
+The width of each image is *m* pixels, the height is *n* pixels (it has the same size as the matrix). The pixel
 in the upper left corner corresponds to first cell of the first row. The color of the pixel is determined by
 the state of the cell:
 
