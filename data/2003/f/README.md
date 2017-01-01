@@ -119,25 +119,25 @@ Maximum number of foxes: 92 after step 6.
 
 `sample-F-1-1.png`:
 Minimum number of grass: 73 after step 7.
-![](sample-F-1-1.png?type=raw)
+![](sample-F-1-1.refout.png?type=raw)
 
 `sample-F-1-2.png`:
 Maximum number of grass: 75 after step 1.
-![](sample-F-1-2.png?type=raw)
+![](sample-F-1-2.refout.png?type=raw)
 
 `sample-F-1-3.png`:
 Minimum number of rabbits: 90 after step 6.
-![](sample-F-1-3.png?type=raw)
+![](sample-F-1-3.refout.png?type=raw)
 
 `sample-F-1-4.png`:
 Maximum number of rabbits: 92 after step 2.
-![](sample-F-1-4.png?type=raw)
+![](sample-F-1-4.refout.png?type=raw)
 
 `sample-F-1-5.png`:
 Minimum number of foxes: 90 after step 1.
-![](sample-F-1-5.png?type=raw)
+![](sample-F-1-5.refout.png?type=raw)
 
 `sample-F-1-6.png`:
 Maximum number of foxes: 92 after step 6.
-![](sample-F-1-6.png?type=raw)
+![](sample-F-1-6.refout.png?type=raw)
 
