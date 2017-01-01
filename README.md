@@ -3,7 +3,7 @@
 This project contains the solutions to the first electronic round of Challenge24, a yearly programming contest held in Budapest.
 
 ## Setup
-Check the problemset folder for problem descriptions and inputs. The `ch24` folder contains our solutions in C# the repo is self contained, the binary dependencies are also included under `packages`.
+Check the `problemset` folder for problem descriptions and inputs. The `ch24` folder contains our solutions written in C#. The repo is self contained, the binary dependencies are also included under `packages`.
 
 ### Mono
 In the repository root:
