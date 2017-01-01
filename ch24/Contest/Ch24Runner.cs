@@ -25,7 +25,12 @@ namespace Contest
             var nsParts = typeof(TSolver).Namespace.Split('.');
             var contestId = "20" + nsParts[1].Substring(nsParts[1].Length - 2);
             var problemName = nsParts[2];
-            var dpat = "./data/{0}/{1}".StFormat(contestId, problemName);
+			var dpatData = Path.GetFullPath("./problemset/{0}/{1}".StFormat(contestId, problemName));
+			var dpatProblems = Path.GetFullPath("./problemset/{0}".StFormat(problemName))
+			                       ;
+			var dpat = Directory.Exists(dpatData) ? dpatData : dpatProblems;
+			if (!Directory.Exists(dpat))
+				throw new ArgumentException("Problemset folder is missing, checked in\n{0}\n{1}".StFormat(dpatData, dpatProblems));
 
             var rgsolver = new List<TSolver>();
             foreach (var filn in Directory.EnumerateFiles(dpat, fmtfilnIn.Replace("{0}", "*")))
