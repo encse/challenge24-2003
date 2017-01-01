@@ -62,4 +62,4 @@ correct solution. When your solution is judged, such errors will be tolerated.
 ```
 ## Sample Output
 `sample-D-1.png`:
-![sample-D-1.png](sample-D-1.refout.png?raw=true =250x)
+<img src="sample-D-1.refout.png?raw=true" width="20%" />
