@@ -6,7 +6,7 @@ This project contains the solutions to the first electronic round of Challenge24
 
 In the repository root:
 ```
-xbuild src/Contest.sln
-src/ch24/bin/x64/Debug10/Ch24.exe
+> xbuild src/Contest.sln
+> src/ch24/bin/x64/Debug10/Ch24.exe
 ```
 
