@@ -7,10 +7,10 @@ some time. When drawing the map, we should follow these rules:
 - The color of the sea is blue (RGB: 0,0,255).
 - The border between two countries, or between a country and the sea is marked by a black line
 (RGB: 0,0,0).
-- The color of a country with area less than 500 km2 is orange (RGB: 255,128,0).
-- The color of a country with area between 500 km2 and 1000 is red (RGB: 255,0,0).
-- The color of a country with area greater than 20000 km2 is yellow (RGB: 255,255,0).
-If the area of the country is between 1000 km2 and 20000 km2 , then its color is determined by the number
+- The color of a country with area less than 500 km<sup>2</sup> is orange (RGB: 255,128,0).
+- The color of a country with area between 500 km<sup>2</sup> and 1000 is red (RGB: 255,0,0).
+- The color of a country with area greater than 20000 km<sup>2</sup> is yellow (RGB: 255,255,0).
+If the area of the country is between 1000 km<sup>2</sup> and 20000 km<sup>2</sup> , then its color is determined by the number
 of vertices on its boundary:
 - A country the boundary of which has 3 vertices (i.e., it is a triangle) should be colored green
 (RGB: 0,255,0).
