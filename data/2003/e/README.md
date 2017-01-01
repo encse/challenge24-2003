@@ -9,20 +9,22 @@ secret message.
 
 The encryption process consists of the following steps.
 
-**Step 1.** We assume that the length l of the original text is a perfect square, that is, l = n × n for some
-integer n. Write the message into an n times n matrix: fill the first row, starting from the left going to
+**Step 1.** We assume that the length `l` of the original text is a perfect square, that is, `l = n × n `for some
+integer `n`. Write the message into an `n` times `n` matrix: fill the first row, starting from the left going to
 the right, then fill the second row, and so on. Read the characters “diagonally”, in the order shown on
 the figure: first read the upper left character, then read the characters under the diagonal arrows shown
 in the figure.
 
+<img src="diagonal.png?type=raw" width="20%"/>
+
 **Step 2.** In this step we reorder the character sequence obtained in Step 1. We repeat the following three
-steps l times:
+steps `l` times:
 * (a) Write down the first character of the sequence, and delete this character from the sequence.
 * (b) If the length of the remaining sequence is longer than 12 characters, then remove the first 12 characters of the sequence, and append it to the end of the sequence.
 * (c) If the length of the sequence is longer than 1, then swap the first two characters.
 
 **Step 3.** The character sequence created in Step 2 can be interpreted as a sequence of integers a<sub>1</sub>, a<sub>2</sub>,
-. . . , a<sub>l</sub> , where each ai is between 0 and 255. In this step we calculate a sequence b<sub>1</sub>, b<sub>2</sub>, . . . , b<sub>l</sub> using the
+. . . , a<sub>l</sub> , where each a<sub>i</sub> is between 0 and 255. In this step we calculate a sequence b<sub>1</sub>, b<sub>2</sub>, . . . , b<sub>l</sub> using the
 following formula:
 
   b<sub>1</sub> = a<sub>1</sub> 
