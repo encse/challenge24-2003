@@ -5,12 +5,12 @@ This project contains the solutions to the first electronic round of Challenge24
 ## Setup
 Check the `problemset` folder for problem descriptions and inputs. The `ch24` folder contains our solutions written in C#. The repo is self contained, the binary dependencies are also included under `packages`.
 
-### Mono
+### If you have Mono
 In the repository root:
 ```
 > xbuild
 > mono bin/Ch24.exe
 ```
-### Visual Studio 2015 and Visual Studio for Mac
+### For Visual Studio 2015 and Visual Studio for Mac users
 Open the solution file `Contest.sln`. Under the project options for the `ch24` project set the run directory to the directory containing the solution file. You should also set `Run on external console`. 
 
